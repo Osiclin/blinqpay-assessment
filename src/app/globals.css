@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+.ng-inner-container {
+  @apply max-w-[1654px] mx-auto
+}
+
+.ng-outer-container {
+  @apply w-full px-[16px] sm:px-[40px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[120px] overflow-hidden
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
