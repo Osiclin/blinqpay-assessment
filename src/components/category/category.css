@@ -1,0 +1,11 @@
+.bp-category-list {
+    @apply text-sm hover:text-black font-medium mr-[10px] hover:underline cursor-pointer capitalize
+}
+
+.active {
+    @apply text-black
+}
+
+.inactive {
+    @apply text-neutral-500
+}
