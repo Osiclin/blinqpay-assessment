@@ -1,0 +1,23 @@
+.cc-button {
+    @apply flex items-center justify-center rounded-[5px];
+}
+
+.cc-button--primary {
+    @apply bg-primary-base border border-white text-white;
+}
+
+.cc-button--secondary {
+    @apply bg-white border border-white text-primary-base;
+}
+
+.cc-button--transparent {
+    @apply border border-white text-white;
+}
+
+.cc-button--40 {
+    @apply rounded-lg py-[8px] px-[17px] text-base !important;
+}
+
+.cc-button--49 {
+    @apply rounded-lg py-[14px] px-[15px] text-base !important;
+}
