@@ -9,6 +9,7 @@ interface Props {
 }
 
 export const AddToCartButton = ({ product }: Props) => {
+    const quantity = 1
     const { cart } = useSelector((state: any) => state.cart)
     const dispatch = useDispatch()
 
@@ -19,7 +20,7 @@ export const AddToCartButton = ({ product }: Props) => {
             theme="primary"
             size="40"
             className="font-normal w-[130px]"
-            onClick={() => dispatch(addToCart({ ...product, quantity: 1 }))}
+            onClick={() => dispatch(addToCart({ ...product, quantity, sub_total: quantity * product.price }))}
             disabled={itemIsAdded}
         >
             {itemIsAdded ? "Added" : "Add to cart"}

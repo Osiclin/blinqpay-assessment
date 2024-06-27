@@ -13,5 +13,5 @@ export interface Product {
 
 export interface CartItem extends Product {
     quantity: number,
-    sub_total?: number
+    sub_total: number
 }
